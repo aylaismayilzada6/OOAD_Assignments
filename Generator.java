@@ -6,6 +6,8 @@ import java.util.Random;
 
 
 /*
+Ayla Ismayilzada, CSCI-3612 - 20966
+
 This class generates random numbers using two different generators,
 calculates statistics (n, mean, stddev, min, max), and displays results in a table.
 */
@@ -137,7 +139,7 @@ public void execute() {
         System.out.println("\nGenerator type: " + gens[g]);
         boolean header = true;
 
-        for (int s = 0; s < sizes.length; s++) { // s is the index of the curren sample size 
+        for (int s = 0; s < sizes.length; s++) { // s is the index of the current sample size 
             ArrayList<Double> nums = populate(sizes[s], gens[g]);
             ArrayList<Double> stats = statistics(nums);
             display(stats, header);
@@ -168,5 +170,6 @@ public static void main(String[] args) {
 //     }
 
 }
+
 
 
